@@ -9,55 +9,55 @@ CalculatorRoot
         id: calculator1
 
 <calculator1>
-# ‰æ–Ê‘S‘Ì‚ÌƒŒƒCƒAƒEƒg
-    orientation: "vertical" # ƒIƒuƒWƒFƒNƒg‚ğ…•½‚É”z’u
+# ç”»é¢å…¨ä½“ã®ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆ
+    orientation: "vertical" # ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ°´å¹³ã«é…ç½®
     display: display_input
 
     ActionBar:
 
         ActionView:
             ActionPrevious:
-                title: '“d‘ì'
-                with_previous: False # true‚¾‚Æ“ª‚ÌƒƒS‚ªƒ{ƒ^ƒ“‚É‚È‚éH
+                title: 'é›»å“'
+                with_previous: False # trueã ã¨é ­ã®ãƒ­ã‚´ãŒãƒœã‚¿ãƒ³ã«ãªã‚‹ï¼Ÿ
 
             ActionButton:
-                text: 'Ø‚è‘Ö‚¦'
+                text: 'åˆ‡ã‚Šæ›¿ãˆ'
                 on_press: print("push ");app.root.change_calc2()
 
 #            ActionButton:
-#                text: '‰¹'
+#                text: 'éŸ³'
 #                icon: 'atlas://data/images/defaulttheme/audio-volume-high'
 
-#            ActionGroup:    # ƒ{ƒ^ƒ“‚ğƒOƒ‹[ƒv‰»‚·‚é
-#                text: 'í—Ş'
+#            ActionGroup:    # ãƒœã‚¿ãƒ³ã‚’ã‚°ãƒ«ãƒ¼ãƒ—åŒ–ã™ã‚‹
+#                text: 'ç¨®é¡'
 #                ActionButton:
-#                    text: 'ŠÖ”“d‘ì'
+#                    text: 'é–¢æ•°é›»å“'
 #                ActionButton:
-#                    text: 'ƒvƒƒOƒ‰ƒ}['
+#                    text: 'ãƒ—ãƒ­ã‚°ãƒ©ãƒãƒ¼'
 
 
-    TextInput:  # ”š•\¦•”•ª
+    TextInput:  # æ•°å­—è¡¨ç¤ºéƒ¨åˆ†
         id: display_input
-        size_hint_y: 1  #@c‚Ì‘å‚«‚³‚ğ‘S‘Ì‚Ì@1/5.5@‚ÌŠ„‡‚Å•\¦‚·‚é   
+        size_hint_y: 1  #ã€€ç¸¦ã®å¤§ãã•ã‚’å…¨ä½“ã®ã€€1/5.5ã€€ã®å‰²åˆã§è¡¨ç¤ºã™ã‚‹   
         font_size: 60
         hint_text: '0'
 
-    Keyboard:   # ƒe[ƒ“ƒL[‚Ì•\¦•”•ª
-        size_hint_y: 3.5    #@c‚Ì‘å‚«‚³‚ğ‘S‘Ì‚Ì@3.5/4.5@‚ÌŠ„‡‚Å•\¦‚·‚é
+    Keyboard:   # ãƒ†ãƒ¼ãƒ³ã‚­ãƒ¼ã®è¡¨ç¤ºéƒ¨åˆ†
+        size_hint_y: 3.5    #ã€€ç¸¦ã®å¤§ãã•ã‚’å…¨ä½“ã®ã€€3.5/4.5ã€€ã®å‰²åˆã§è¡¨ç¤ºã™ã‚‹
 
 
-<Keyboard@GridLayout>:  # class Keyboard(GridLayout):‚Æ“¯‚¶ˆÓ–¡
+<Keyboard@GridLayout>:  # class Keyboard(GridLayout):ã¨åŒã˜æ„å‘³
 
-    # 4—ñ~5s‚Ìƒ{ƒ^ƒ“‚ğì¬‚·‚é
+    # 4åˆ—Ã—5è¡Œã®ãƒœã‚¿ãƒ³ã‚’ä½œæˆã™ã‚‹
     cols: 4
     rows: 5
 
     spacing: 2
     padding: 4
 
-    # 1—ñ–Ú
-    ClearButton:    # ƒ{ƒ^ƒ“‚Ìí—Ş
-        text: "C"   # ƒ{ƒ^ƒ“‚Ì•\¦–¼
+    # 1åˆ—ç›®
+    ClearButton:    # ãƒœã‚¿ãƒ³ã®ç¨®é¡
+        text: "C"   # ãƒœã‚¿ãƒ³ã®è¡¨ç¤ºå
     CalcButton:
         text: "%"
     DelButton:
@@ -65,7 +65,7 @@ CalculatorRoot
     OperatorButton:
         text: "/"
 
-    # 2—ñ–Ú
+    # 2åˆ—ç›®
     NumberButton:
         text: "7"
     NumberButton:
@@ -75,7 +75,7 @@ CalculatorRoot
     OperatorButton:
         text: "*"
 
-    # 3—ñ–Ú
+    # 3åˆ—ç›®
     NumberButton:
         text: "4"
     NumberButton:
@@ -85,7 +85,7 @@ CalculatorRoot
     OperatorButton:
         text: "-"
 
-    # 4—ñ–Ú
+    # 4åˆ—ç›®
     NumberButton:
         text: "1"
     NumberButton:
@@ -95,7 +95,7 @@ CalculatorRoot
     OperatorButton:
         text: "+"
 
-    # 5—ñ–Ú
+    # 5åˆ—ç›®
     CalcButton:
         text: "+/-"
     NumberButton:
@@ -118,7 +118,7 @@ CalculatorRoot
     #font: "Roboto"
     font_size: '30dp'
     bold: True
-    on_press:  app.root.ids['calculator1'].print_number(self.text)   # ƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚Æ‚« main.py‚Ì@CalculatorƒNƒ‰ƒX‚Ìprint_number()‚ªÀs‚³‚ê‚é
+    on_press:  app.root.ids['calculator1'].print_number(self.text)   # ãƒœã‚¿ãƒ³ãŒæŠ¼ã•ã‚ŒãŸã¨ã main.pyã®ã€€Calculatorã‚¯ãƒ©ã‚¹ã®print_number()ãŒå®Ÿè¡Œã•ã‚Œã‚‹
 
 <OperatorButton@ButtonFormat>:
     on_press:  app.root.ids['calculator1'].print_operator(self.text)
@@ -132,95 +132,95 @@ CalculatorRoot
 <EqualButton@ButtonFormat>:
     on_press:  app.root.ids['calculator1'].calculate()
 
-<CalcButton@ButtonFormat>:  #¬”“_‚ğ•\¦‚·‚é—\’è‚¾‚ª–¢À‘•
+<CalcButton@ButtonFormat>:  #å°æ•°ç‚¹ã‚’è¡¨ç¤ºã™ã‚‹äºˆå®šã ãŒæœªå®Ÿè£…
     on_press:  app.root.ids['calculator1'].print_point(self.text)
 
 
 <Calculator2@BoxLayout>
     id: calculator2
 
-    orientation: "vertical" # ƒIƒuƒWƒFƒNƒg‚ğ…•½‚É”z’u
+    orientation: "vertical" # ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’æ°´å¹³ã«é…ç½®
     display: display_input
 
     ActionBar:
         ActionView:
             ActionPrevious:
-                title: '“d‘ì2'
-                with_previous: False # true‚¾‚Æ“ª‚ÌƒƒS‚ªƒ{ƒ^ƒ“‚É‚È‚éH
+                title: 'é›»å“2'
+                with_previous: False # trueã ã¨é ­ã®ãƒ­ã‚´ãŒãƒœã‚¿ãƒ³ã«ãªã‚‹ï¼Ÿ
             ActionOverflow:
 
             ActionButton:
-                text: 'Ø‚è‘Ö‚¦'
+                text: 'åˆ‡ã‚Šæ›¿ãˆ'
                 on_press: print("push2 ");app.root.change_calc()
 
 
-    TextInput:  # ”š•\¦•”•ª
+    TextInput:  # æ•°å­—è¡¨ç¤ºéƒ¨åˆ†
         id: display_input
-        size_hint_y: 1  #@c‚Ì‘å‚«‚³‚ğ‘S‘Ì‚Ì@1/4.5@‚ÌŠ„‡‚Å•\¦‚·‚é   
+        size_hint_y: 1  #ã€€ç¸¦ã®å¤§ãã•ã‚’å…¨ä½“ã®ã€€1/4.5ã€€ã®å‰²åˆã§è¡¨ç¤ºã™ã‚‹   
         font_size: 60
-    Keyboard2:   # ƒe[ƒ“ƒL[‚Ì•\¦•”•ª
-        size_hint_y: 3.5    #@c‚Ì‘å‚«‚³‚ğ‘S‘Ì‚Ì@3.5/4.5@‚ÌŠ„‡‚Å•\¦‚·‚é
+    Keyboard2:   # ãƒ†ãƒ¼ãƒ³ã‚­ãƒ¼ã®è¡¨ç¤ºéƒ¨åˆ†
+        size_hint_y: 3.5    #ã€€ç¸¦ã®å¤§ãã•ã‚’å…¨ä½“ã®ã€€3.5/4.5ã€€ã®å‰²åˆã§è¡¨ç¤ºã™ã‚‹
 
 
-<Keyboard2@GridLayout>:  # class Keyboard(GridLayout):‚Æ“¯‚¶ˆÓ–¡
+<Keyboard2@GridLayout>:  # class Keyboard(GridLayout):ã¨åŒã˜æ„å‘³
 
-    # 4—ñ~5s‚Ìƒ{ƒ^ƒ“‚ğì¬‚·‚é
+    # 4åˆ—Ã—5è¡Œã®ãƒœã‚¿ãƒ³ã‚’ä½œæˆã™ã‚‹
     cols: 4
     rows: 5
 
     spacing: 2
     padding: 4
 
-    # 1—ñ–Ú
-    ClearButton2:    # ƒ{ƒ^ƒ“‚Ìí—Ş
-        text: "íœ"   # ƒ{ƒ^ƒ“‚Ì•\¦–¼
+    # 1åˆ—ç›®
+    ClearButton2:    # ãƒœã‚¿ãƒ³ã®ç¨®é¡
+        text: "å‰Šé™¤"   # ãƒœã‚¿ãƒ³ã®è¡¨ç¤ºå
 
     CalcButton2:
-        text: "è—]"
+        text: "å‰°ä½™"
     DelButton2:
         text: "<x"
     OperatorButton2:
-        text: "¤"
+        text: "å•†"
 
-    # 2—ñ–Ú
+    # 2åˆ—ç›®
     NumberButton2:
-        text: "µ"
+        text: "ä¸ƒ"
         calc_val: '7'
     NumberButton2:
-        text: "”ª"
+        text: "å…«"
         calc_val: '8'
     NumberButton2:
-        text: "‹ã"
+        text: "ä¹"
         calc_val: '9'
 
     OperatorButton2:
-        text: "Ï"
+        text: "ç©"
 
-    # 3—ñ–Ú
+    # 3åˆ—ç›®
     NumberButton2:
-        text: "l"
+        text: "å››"
     NumberButton2:
-        text: "ŒÜ"
+        text: "äº”"
     NumberButton2:
-        text: "˜Z"
+        text: "å…­"
     OperatorButton2:
-        text: "·"
+        text: "å·®"
 
-    # 4—ñ–Ú
+    # 4åˆ—ç›®
     NumberButton2:
-        text: "ˆê"
+        text: "ä¸€"
     NumberButton2:
-        text: "“ñ"
+        text: "äºŒ"
     NumberButton2:
-        text: "O"
+        text: "ä¸‰"
     OperatorButton2:
-        text: "˜a"
+        text: "å’Œ"
 
-    # 5—ñ–Ú
+    # 5åˆ—ç›®
     CalcButton2:
         text: "+/-"
     NumberButton2:
-        text: "—ë"
+        text: "é›¶"
     CalcButton2:
         text: "."
     EqualButton2:

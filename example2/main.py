@@ -50,8 +50,10 @@ class Calculator1(BoxLayout):
 
     def print_point(self, operator):
         # 「.」が押されれた場合の処理
+        text = "{}{}".format(self.display.text, operator) # 今までの入力された文字列と入力された値が表示される
+        self.display.text = text
 
-        print("（未実装）演算子「{0}」が押されました".format(operator))
+        print("演算子「{0}」が押されました".format(operator))
 
     def clear_display(self):
         self.display.text = ""
